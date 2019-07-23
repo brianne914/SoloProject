@@ -43,7 +43,7 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         shop: {
-            selector: '//a[contains(text(),"Shop")])[2]',
+            selector: '//*[@id="navigation--expanded"]/div[2]/ul[2]/li[1]/a',
             locateStrategy: "xpath"
         },
         allServices: {
@@ -418,5 +418,33 @@ module.exports = {
             selector: '//h4[contains(text(), "Wayfair")]',
             locateStrategy: 'xpath'
         },
+        shopAll: {
+            selector: '//h1[contains(text(), "Shop for your home")]',
+            locateStrategy: 'xpath'
+        },
+        airCon: {
+            selector: '/html/body/div[5]/main/section/div/div[1]/div/div/ul/li[1]/a',
+            locateStrategy: 'xpath'
+        },
+        bedroom: {
+            selector: '//*[@id="zr9rh5-acc-menu-link"]/a',
+            locateStrategy: 'xpath'
+        },
+        livingRoom: {
+            selector: '//*[@id="e9b8ne-acc-menu-link"]/a',
+            locateStrategy: 'xpath'
+        },
+        diningRoom: {
+            selector: '//*[@id="c4iiqa-acc-menu-link"]/a',
+            locateStrategy: 'xpath'
+        },
+        shopKitchen: {
+            selector: '//*[@id="0bu3vu-acc-menu-link"]/a',
+            locateStrategy: 'xpath'
+        },
+        barStool: {
+            selector: '//*[@id="mooj53-acc-menu"]/li[2]/a',
+            locateStrategy: 'xpath'
+        }
     }
 }

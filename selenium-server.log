@@ -1,18 +1,18 @@
-13:02:19.867 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
-13:02:19.936 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4445
-2019-07-16 13:02:19.990:INFO::main: Logging initialized @325ms to org.seleniumhq.jetty9.util.log.StdErrLog
-13:02:20.326 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
-13:02:20.501 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4445
-13:02:20.827 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+10:14:21.956 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+10:14:22.044 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
+2019-07-23 10:14:22.107:INFO::main: Logging initialized @385ms to org.seleniumhq.jetty9.util.log.StdErrLog
+10:14:22.401 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+10:14:22.518 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
+10:14:22.821 INFO [ActiveSessionFactory.apply] - Capabilities are: {
   "acceptSslCerts": true,
   "browserName": "chrome",
   "name": "Handy Test"
 }
-13:02:20.830 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
-Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 44859
+10:14:22.824 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 10411
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1563303743.442][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
-13:02:24.196 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
-13:02:24.801 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 0c46c4855cf4f2b17ec896e60408f479 (org.openqa.selenium.chrome.ChromeDriverService)
-13:02:37.633 INFO [ActiveSessions$1.onStop] - Removing session 0c46c4855cf4f2b17ec896e60408f479 (org.openqa.selenium.chrome.ChromeDriverService)
+[1563898464.483][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+10:14:24.811 INFO [ProtocolHandshake.createSession] - Detected dialect: OSS
+10:14:25.264 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 571eea1d81c011782d151f44ae41e58e (org.openqa.selenium.chrome.ChromeDriverService)
+10:16:57.437 INFO [ActiveSessions$1.onStop] - Removing session 571eea1d81c011782d151f44ae41e58e (org.openqa.selenium.chrome.ChromeDriverService)

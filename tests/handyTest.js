@@ -9,6 +9,22 @@ module.exports = {
     after: browser => {
         handy.end()
     },
+    'Log In Test': browser => {
+        handy.navigate()
+        .waitForElementPresent('@handy')
+        .click('@logIn')
+        .pause(3000)
+        .setValue('@loginEmail', "tulaloo82@gmail.com")
+        .setValue('@loginPassword', "P@ssw0rd")
+        .click('@submitLogin')
+        .verify.visible('@allServices') 
+        .clearValue('@loginEmail')
+        .setValue('@loginEmail', "brianne914@gmail.com")
+        .clearValue('@loginPassword')
+        .setValue('@loginPassword', "fakePassword")
+        .click('@submitLogin')
+        .verify.visible('.login-error')
+    },
     'Service Test': browser => {
         servicesData.forEach(test => {
             handy.navigate()
@@ -20,14 +36,6 @@ module.exports = {
             handy.navigate()
             handy.partnerHelpTest(test)
         })
-    },
-      'Log In Test': browser => {
-        handy.navigate()
-        .waitForElementPresent('@handy')
-        .click('@logIn')
-        .setValue('@loginEmail', "tulaloo82@gmail.com")
-        .setValue('@loginPassword', "P@ssw0rd")
-        .click('@submitLogin')
-        .pause()
-      }
+    }
+
 }
